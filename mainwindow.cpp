@@ -2,6 +2,7 @@
 #include "ui_mainwindow.h"
 #include <iostream>
 
+//using fin = cin;
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
@@ -21,7 +22,7 @@ MainWindow::MainWindow(QWidget *parent) :
 MainWindow::~MainWindow()
 {
     delete AOR;
-    delete newUser;
+    //delete newUser;
     delete ui;
 }
 
