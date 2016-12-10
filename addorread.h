@@ -1,7 +1,7 @@
 #ifndef ADDORREAD_H
 #define ADDORREAD_H
 
-#include <crypt.h>
+//#include <crypt.h>
 #include <QDialog>
 #include <QString>
 #include <fstream>
