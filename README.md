@@ -6,9 +6,7 @@ Qt_LockBox
 
 ## Подготовка к сборке проекта
 
-1) Скачиваем последнюю версию Qt Creator. [Download] Qt Open Source
-(http://download.qt.io/official_releases/qt/5.7/5.7.0/qt-opensource-linux-x64-5.7.0.run)
-
+1) Скачиваем последнюю версию Qt Creator. [Download](http://download.qt.io/official_releases/qt/5.7/5.7.0/qt-opensource-linux-x64-5.7.0.run) Qt Open Source.
 2) Скачиваем и собираем библиотеку [botan](https://botan.randombit.net/#download)
 
 3) Скачиваем и собираем [boost](http://www.boost.org/)
@@ -26,7 +24,7 @@ Qt_LockBox
 
 3) В конструкторе MainWindow прописываем путь до папки, которую хотите выбрать в качестве файлового хранилища (в ней сразу же создаете файл для хранения паролей "passwords")  
 
-  MainWindow::MainWindow(QWidget *parent) :  
+  ***MainWindow::MainWindow(QWidget *parent):  
        QMainWindow(parent),  
        ui(new Ui::MainWindow)  
   {  
