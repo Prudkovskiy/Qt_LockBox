@@ -24,7 +24,7 @@ Qt_LockBox
 
 3) В конструкторе MainWindow прописываем путь до папки, которую хотите выбрать в качестве файлового хранилища (в ней сразу же создаете файл для хранения паролей "passwords")  
 
-  ***MainWindow::MainWindow(QWidget *parent):  
+  MainWindow::MainWindow(QWidget *parent):  
        QMainWindow(parent),  
        ui(new Ui::MainWindow)  
   {  
