@@ -19,18 +19,17 @@ Qt_LockBox
 
 2) в хэдере crypto.h прописываем в #include<> полные пути до хэдеров библиотеки botan 
  пример:  
- #include </usr/local/include/botan/botan.h>
- #include </usr/local/include/botan/pipe.h>
- #include </usr/local/include/botan/aes.h>
- #include </usr/local/include/botan/filters.h>
+ #include </usr/local/include/botan/botan.h>  
+ #include </usr/local/include/botan/pipe.h>  
+ #include </usr/local/include/botan/aes.h>  
+ #include </usr/local/include/botan/filters.h>  
 
-3) В конструкторе MainWindow прописываем путь до папки, которую хотите выбрать в качестве файлового хранилища (в ней сразу же создаете файл для хранения паролей "passwords")
+3) В конструкторе MainWindow прописываем путь до папки, которую хотите выбрать в качестве файлового хранилища (в ней сразу же создаете файл для хранения паролей "passwords")  
 
-  MainWindow::MainWindow(QWidget *parent) :
-       QMainWindow(parent),
-       ui(new Ui::MainWindow)
-  {
-      lockbox = path("Your_path/lockbox");
-      .....
-  }
-  
+  MainWindow::MainWindow(QWidget *parent) :  
+       QMainWindow(parent),  
+       ui(new Ui::MainWindow)  
+  {  
+      lockbox = path("Your_path/lockbox");  
+      .....  
+  }  
